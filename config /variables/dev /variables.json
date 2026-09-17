@@ -1,12 +1,12 @@
 {
-  "team_league_elt": {
-    "feature_name": "team_league_elt",
-    "team_stats_raw_write_disposition": "WRITE_APPEND",
-    "team_stats_raw_create_disposition": "CREATE_NEVER",
-    "dataset": "mazlum_test",
-    "team_stat_input_bucket": "mazlum_dev",
-    "team_stat_source_object": "airflow/team_league/elt/*.json",
-    "team_stat_table": "team_stat",
-    "team_stat_raw_table": "team_stat_raw"
+  "harris_county_cad_elt": {
+    "feature_name": "harris_county_cad_elt",
+    "hcad_raw_write_disposition": "WRITE_APPEND",
+    "hcad_raw_create_disposition": "CREATE_IF_NEEDED",
+    "dataset": "harris_county_cad",
+    "hcad_input_bucket": "harris_county_cad_dev",
+    "hcad_source_object": "airflow/harris_county_cad/elt/*.csv",
+    "hcad_table": "hcad_properties",
+    "hcad_raw_table": "hcad_properties_raw"
   }
 }
